@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.aboubakar.tdd.services;
+package com.nouri.tdd.services;
 
-import com.aboubakar.tdd.exceptions.InvalidListException;
+import com.nouri.tdd.exceptions.InvalidListException;
 
 /**
  * @author M-info
@@ -21,7 +21,7 @@ import com.aboubakar.tdd.exceptions.InvalidListException;
  *
  */
 
-public class NumberService {
+public class BiggestElement {
 
 	// Maintenant nous écrivons notre fonction dirigée par le test
 
@@ -42,4 +42,6 @@ public class NumberService {
 
 		return max;
 	}
+	
+	
 }

@@ -1,10 +1,11 @@
-package com.aboubakar.tdd.services;
+package com.nouri.tdd.services;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.aboubakar.tdd.exceptions.InvalidListException;
+import com.nouri.tdd.exceptions.InvalidListException;
+import com.nouri.tdd.services.BiggestElement;
 
 /**
  * @author M-info
@@ -32,7 +33,7 @@ public class TestNumberService {
 
 		int[] liste = new int[] { 7, 12, 19 };
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		int biggest1 = numberService.biggestNumber(liste);
 		assertEquals(19, biggest1);
@@ -45,7 +46,7 @@ public class TestNumberService {
 
 		int[] liste = { -8, 3, 7, -2, 0, 4, 24, -17, -3 };
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		int biggest = numberService.biggestNumber(liste);
 		assertEquals(24, biggest);
@@ -56,7 +57,7 @@ public class TestNumberService {
 
 		int[] liste = { -8, -14, -27, -35 };
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		int biggest = numberService.biggestNumber(liste);
 		assertEquals(-8, biggest);
@@ -67,7 +68,7 @@ public class TestNumberService {
 
 		int[] liste = { 10, 2, -8, 5, 2, -8, 10, 11, 10, 2, -8, 4, 0, 14, 11 };
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		int biggest = numberService.biggestNumber(liste);
 		assertEquals(14, biggest);
@@ -78,7 +79,7 @@ public class TestNumberService {
 
 		int[] liste = { -9, -8, -7, -1, 0, 1, 7, 8, 9 };
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		int biggest = numberService.biggestNumber(liste);
 		assertEquals(9, biggest);
@@ -89,7 +90,7 @@ public class TestNumberService {
 
 		int[] liste = { 5 };
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		int biggest = numberService.biggestNumber(liste);
 		assertEquals(5, biggest);
@@ -101,8 +102,12 @@ public class TestNumberService {
 	@Test(expected = InvalidListException.class)
 	public void testBiggestNumberWithNullValue() {
 
-		NumberService numberService = new NumberService();
+		BiggestElement numberService = new BiggestElement();
 
 		numberService.biggestNumber(null);
 	}
+	
+	
+	
+	
 }

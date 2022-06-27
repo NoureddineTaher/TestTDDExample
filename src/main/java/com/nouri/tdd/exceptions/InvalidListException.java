@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.aboubakar.tdd.exceptions;
+package com.nouri.tdd.exceptions;
 
 /**
  * @author M-info
